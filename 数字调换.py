@@ -1,0 +1,12 @@
+print('该程序可以将两个值进行调换')
+print('请输入第一个值')
+a=input()
+a=int(a)
+print('请输入第二个值')
+b=input()
+b=int(b)
+a=a+b
+b=a-b
+a=a-b
+print('现在第一个值是',a)
+print('现在第二个值是',b)
