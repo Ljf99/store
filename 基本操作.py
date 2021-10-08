@@ -40,19 +40,20 @@ driver.find_element_by_xpath("//*[@name = 'file' and @type = 'file']").send_keys
 time.sleep(2)
 driver.quit()
 '''
-'''
+
 #京东搜索操作练习
 
 driver.get("https://www.jd.com/")
 driver.maximize_window()
 driver.find_element_by_xpath("//*[@type= 'text' and @autocomplete= 'off' and @id='key' and @accesskey='s' and @class= 'text']").send_keys('电脑')
 driver.find_element_by_xpath("//*[@class = 'button']").click()
-time.sleep(15)#10秒左右，太短还没加载新页面就退出了
-driver.quit()
-
-
-# <input clstag="h|keycount|head|search_c" type="text" autocomplete='off' id="key" accesskey="s" class= 'text' aria-label="搜索" style="background: transparent;">
-'''
+# time.sleep(15)#10秒左右，太短还没加载新页面就退出了
+# driver.find_element_by_xpath("[class = 'gl-i-wrap']")
+# driver.find_element_by_xpath("[@width='220' and @height = '220' and @data-img = '1' and @data-lazy-img = 'done' @source-data-lazy-img src='//img14.360buyimg.com/n7/jfs/t1/194870/22/15626/106388/610bb029Ebd40fd70/ca3240c8d6c4ae27.jpg']").click()
+driver.find_element_by_xpath("[@src='//img10.360buyimg.com/n7/jfs/t1/200095/30/1388/161145/610a483bE68ae7590/0a4edb331d0ffdac.jpg']").click()
+# driver.find_element_by_xpath("[@width = '220' and @height = '220' and @data-ing = '1' and @data-lazy-img = 'done']").click()
+# driver.quit()
+# <img width="220" height="220" data-img="1" data-lazy-img="done" src="//img10.360buyimg.com/n7/jfs/t1/200095/30/1388/161145/610a483bE68ae7590/0a4edb331d0ffdac.jpg" source-data-lazy-img="">
 '''
 #必应搜索练习
 driver.get("https://cn.bing.com/?scope=web&FORM=EDNTHT")
